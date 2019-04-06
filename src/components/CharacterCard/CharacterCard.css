@@ -1,0 +1,50 @@
+/* pers-card
+/* -------------------------------------------- */
+.pers-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 19px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #444;
+  box-sizing: border-box;
+  max-width: 302px;
+  margin: auto;
+  height: 100%;
+  transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+.pers-card:hover {
+  box-shadow: 0px 0px 22px #13afc5;
+  border-color: #13afc5;
+}
+
+.pers-card__pic {
+  position: relative;
+}
+.pers-card__pic:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.pers-card__picinn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pers-card img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.pers-card .pers-descr {
+  background: #222;
+  padding: 10px 5px;
+  font-size: 15px;
+}

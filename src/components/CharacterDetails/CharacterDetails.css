@@ -1,0 +1,68 @@
+/* character-card
+/* -------------------------------------------- */
+.character-card {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10px;
+  background: #222;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid #444;
+  text-align: left;
+  box-shadow: 5px 5px 19px rgba(0, 0, 0, 0.3);
+}
+
+.character-card img {
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.character-descr {
+  color: #13afc5;
+  font-size: 18px;
+  padding: 0 10px 0 40px;
+}
+
+.character-descr span {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.character-descr p {
+  margin: 0 0 1em;
+}
+
+.character-name {
+  margin: 0 0 0.8em;
+  color: #fff;
+  font-size: 30px;
+  line-height: 0.8;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .character-card {
+    display: block;
+    text-align: center;
+  }
+  .character-card img {
+    margin-bottom: 1em;
+  }
+  .character-descr {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .character-card {
+    padding: 20px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+  }
+  .character-descr {
+    font-size: 17px;
+  }
+}

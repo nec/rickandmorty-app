@@ -1,0 +1,22 @@
+/* filter
+/* -------------------------------------------- */
+.filter {
+  padding: 15px 0;
+  background: #444;
+  color: #fff;
+}
+
+.filter a {
+  display: inline-block;
+  vertical-align: top;
+  color: #13afc5;
+  margin: 0 15px;
+  text-transform: capitalize;
+}
+
+.filter a.active {
+  color: #92bc56;
+}
+.filter a:hover {
+  color: #92bc56;
+}

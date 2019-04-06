@@ -1,0 +1,30 @@
+/* pers-grid
+/* -------------------------------------------- */
+.pers-grid {
+  font-size: small;
+  display: grid;
+  padding: 30px 30px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.pers-grid a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .pers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .pers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 414px) {
+  .pers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
