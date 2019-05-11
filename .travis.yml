@@ -5,9 +5,9 @@ cache:
   directories:
     - node_modules
 script:
-  - npm run test -- --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+  - npm run test --coverage
 branches:
   only:
     - travis
 after_script:
-  - cat ./coverage/lcov.info | coveralls
+  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
