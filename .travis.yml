@@ -10,3 +10,5 @@ branches:
   only:
     - master
     - travis
+after_script:
+  - cat ./coverage/lcov.info | coveralls
