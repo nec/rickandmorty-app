@@ -6,6 +6,7 @@
 # testing
 /coverage
 __snapshots__
+.coveralls.yml
 
 # production
 /build
